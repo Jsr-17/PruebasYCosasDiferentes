@@ -8,11 +8,11 @@
 public class nuevoEjemplo {
 
     public static void main(String[] args) {
-        Operaciones sumita=(a,b)->(a+b-b/(a*b))%2;
+        Operaciones sumita=(a,b)->(a+b-b)%2;
         Operaciones sumita2=(a,b)->(a+b-b/(a*b));
         
-        ImprimeOperacion(sumita,5,6);
-        System.out.println(operacionPar(sumita2, 12, 2));
+        ImprimeOperacion(sumita2,5,6);
+        System.out.println(operacionPar(sumita, 0, 13));
 
     }
     public static boolean operacionPar(Operaciones operaciones,int n1,int n2){
